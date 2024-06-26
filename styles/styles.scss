@@ -1,0 +1,20 @@
+$primary-color: black;
+$secondary-color: white;
+
+@mixin test-mixin($text-color, $back-color){
+    color: $primary-color;
+    background-color: $secondary-color;
+}
+
+body{
+    @include test-mixin($primary-color, $secondary-color)
+}
+
+.hidden {
+    display: none;
+}
+
+#images img {
+    width: 50px;
+    height: 50px;
+}
